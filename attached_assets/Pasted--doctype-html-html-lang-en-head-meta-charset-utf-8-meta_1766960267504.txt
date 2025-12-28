@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sacred Home Foundation</title>
+  <meta name="description" content="Sacred Home Foundation supports parents from pregnancy through age 3 with financial assistance, education, and community." />
+
+  <style>
+    :root{
+      /* Sacred Home Foundation Brand Palette */
+      --bg: #f6f3ee;
+      --panel: #ffffff;
+      --panel2: #faf7f2;
+      --text: #2b2b2b;
+      --muted: #6b6b6b;
+      --soft: #8a8a8a;
+      --line: #e7e1d9;
+      --primary: #d4b36a;
+      --primary-soft: #efe2b8;
+      --secondary: #8faea1;
+      --accent: #c98b7c;
+      --radius: 18px;
+      --shadow: 0 20px 40px rgba(0,0,0,.08);
+      --max: 1100px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:auto; min-height:100%;}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: var(--text);
+      background:
+        radial-gradient(900px 500px at 10% 0%, rgba(212,179,106,.25), transparent 60%),
+        radial-gradient(800px 500px at 90% 20%, rgba(143,174,161,.22), transparent 60%),
+        var(--bg);
+      overflow-x:hidden;
+    }
+
+    a{color:inherit; text-decoration:none}
+    a:hover{opacity:.92}
+
+    .wrap{max-width:var(--max); margin:0 auto; padding: 0 22px;}
+
+    /* Top bar */
+    .topbar{
+      position: sticky;
+      top:0;
+      z-index:10;
+      background: rgba(246,243,238,.92);
+      border-bottom: 1px solid var(--line);
+    }
+    }
+    .topbar-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding: 14px 0;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width: 220px;
+    }
+    .mark{
+      width:44px;
+      height:44px;
+      border-radius: 50%;
+      background: transparent;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+    .mark img{
+      width:44px;
+      height:44px;
+      object-fit:contain;
+      filter: brightness(0.95) sepia(1) saturate(1.4) hue-rotate(5deg);
+    }
+    .mark:after{
+      content:"";
+      position:absolute;
+      inset:-20px;
+      background: radial-gradient(circle at 20% 10%, rgba(255,255,255,.35), transparent 55%);
+      transform: rotate(18deg);
+    }
+    .brand h1{
+      font-size: 14px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin:0;
+      line-height:1.2;
+      color:#2b2b2b;
+    }
+    .brand .sub{font-size: 12px; color: var(--muted); margin-top:3px; letter-spacing:.02em;}
+
+    nav{
+      display:flex;
+      align-items:center;
+      gap: 14px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+
+    .menu-btn{
+      display:none;
+      font-size:14px;
+      padding:10px 14px;
+      border-radius:14px;
+      font-weight:600;
+      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+      border:1px solid var(--primary);
+      color:#2b2b2b;
+      box-shadow: 0 6px 16px rgba(212,179,106,.25);
+      cursor:pointer;
+    }
+
+    .mobile-nav{
+      display:none;
+      flex-direction:column;
+      gap:10px;
+      padding:14px 0;
+    }
+
+    .mobile-nav a{
+      font-size: 13px;
+      padding: 10px 14px;
+      border-radius: 14px;
+      font-weight:600;
+      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+      border: 1px solid var(--primary);
+      color:#2b2b2b;
+      box-shadow: 0 6px 16px rgba(212,179,106,.25);
+      white-space:nowrap;
+    }
+    nav a:hover{opacity:.9}
+    
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      font-weight: 600;
+      cursor:pointer;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+      user-select:none;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.22)}
+    .btn.primary{
+      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+      border-color: var(--primary);
+      color:#2b2b2b;
+      box-shadow: 0 10px 24px rgba(212,179,106,.35);
+    }
+    .btn.primary:hover{background: linear-gradient(140deg, rgba(243,210,122,.26), rgba(247,231,177,.12));}
+
+    /* Hero */
+    header{
+      padding: 56px 0 26px;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 22px;
+      align-items:stretch;
+    }
+    .card{
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero-main{padding: 26px; position:relative; overflow:hidden;}
+    .hero-main:before{
+      content:"";
+      position:absolute;
+      inset:-160px -200px auto auto;
+      width: 520px;
+      height: 520px;
+      background: radial-gradient(circle at 30% 30%, rgba(243,210,122,.26), transparent 60%);
+      filter: blur(2px);
+      transform: rotate(18deg);
+    }
+
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 8px 12px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.05);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing:.02em;
+      position:relative;
+      z-index:1;
+    }
+    .dot{width:8px;height:8px;border-radius:99px;background: var(--gold); box-shadow: 0 0 18px rgba(243,210,122,.5);}
+
+    .hero-main h2{
+      margin: 14px 0 0;
+      font-size: clamp(30px, 3.4vw, 46px);
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+      position:relative;
+      z-index:1;
+    }
+    .hero-main p{
+      margin: 14px 0 0;
+      max-width: 62ch;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+      position:relative;
+      z-index:1;
+    }
+
+    .hero-actions{display:flex; gap: 12px; flex-wrap:wrap; margin-top: 18px; position:relative; z-index:1;}
+
+    .hero-side{padding: 20px; display:flex; flex-direction:column; justify-content:space-between; gap: 14px;}
+    .stat{
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .stat .label{font-size: 12px; color: var(--muted); letter-spacing:.10em; text-transform: uppercase;}
+    .stat .value{font-size: 22px; margin-top: 8px; font-weight: 700;}
+    .stat .note{font-size: 13px; color: var(--soft); margin-top: 8px; line-height:1.5;}
+
+    /* Sections */
+    section{padding: 30px 0;}
+    .section-title{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom: 14px;
+    }
+    .section-title h3{
+      margin:0;
+      font-size: 20px;
+      letter-spacing: -0.01em;
+    }
+    .section-title p{
+      margin:0;
+      color: var(--muted);
+      font-size: 13px;
+      max-width: 70ch;
+    }
+
+    .grid-3{display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px;}
+    .grid-2{display:grid; grid-template-columns: repeat(2, 1fr); gap: 14px;}
+
+    .pane{padding: 18px;}
+    .pane h4{margin:0; font-size: 15px; letter-spacing:-0.01em;}
+    .pane p{margin:10px 0 0; color: var(--muted); line-height:1.6; font-size: 14px;}
+
+    .pill-row{display:flex; gap: 10px; flex-wrap:wrap; margin-top: 12px;}
+    .pill{
+      font-size: 12px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.12);
+      color: var(--muted);
+    }
+    .pill strong{color: var(--text)}
+
+    .list{margin: 12px 0 0; padding-left: 18px; color: var(--muted); line-height: 1.7; font-size: 14px;}
+    .list li{margin: 6px 0;}
+
+    /* CTA */
+    .cta{
+      padding: 22px;
+      display:flex;
+      gap: 14px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      background:
+        radial-gradient(900px 360px at 20% 10%, rgba(243,210,122,.22), transparent 60%),
+        rgba(255,255,255,.06);
+      border: 1px solid rgba(243,210,122,.22);
+    }
+    .cta h3{margin:0; font-size: 18px;}
+    .cta p{margin: 6px 0 0; color: var(--muted); max-width: 70ch;}
+
+    /* Footer */
+    footer{padding: 26px 0 46px; color: var(--soft);}
+    .foot{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+    .small{font-size: 12px;}
+
+    /* Responsive */
+    @media (max-width: 920px){
+      .hero{grid-template-columns: 1fr;}
+      .grid-3{grid-template-columns: 1fr;}
+      .grid-2{grid-template-columns: 1fr;}
+      nav{display:none;}
+      .menu-btn{display:inline-flex;}
+    }
+      .grid-3{grid-template-columns: 1fr;}
+      .grid-2{grid-template-columns: 1fr;}
+      nav{display:none;}
+      .menu-btn{display:inline-flex;}
+    }
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      .btn{transition:none}
+      html{scroll-behavior:auto}
+    }
+
+    html{scroll-behavior:smooth;}
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <div class="topbar-inner">
+        <a class="brand" href="#top" aria-label="Sacred Home Foundation home">
+          <div class="mark" aria-hidden="true">
+            <img src="Circle Coin Large.PNG" alt="Sacred Home Foundation logo" />
+          </div>
+          <div>
+            <h1>Sacred Home Foundation</h1>
+            <div class="sub">Pregnancy through age 3, supported with love.</div>
+          </div>
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+
+        <nav aria-label="Primary">
+          <a href="#mission">Mission</a>
+          <a href="#program">Pilot Program</a>
+          <a href="#how">How It Works</a>
+          <a href="#governance">Governance</a>
+          <a href="#next">Next Steps</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="mobile-nav" id="mobileNav">
+          <a href="#mission">Mission</a>
+          <a href="#program">Pilot Program</a>
+          <a href="#how">How It Works</a>
+          <a href="#governance">Governance</a>
+          <a href="#next">Next Steps</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a class="btn primary" href="#contact">Get involved</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+    <header>
+      <div class="wrap">
+        <div class="hero">
+          <div class="card hero-main">
+            <div class="kicker"><span class="dot" aria-hidden="true"></span> Building a world where parents can stay home with their babies.</div>
+            <h2>Because the first three years are sacred.</h2>
+            <p>
+              Sacred Home Foundation exists to support parents from pregnancy through age 3 with financial assistance,
+              conscious parenting education, and community care, so families can stay home and raise children with presence.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#program">Explore the pilot</a>
+              <a class="btn" href="#how">How the program works</a>
+            </div>
+            <div class="pill-row" aria-label="Key values">
+              <span class="pill"><strong>Love</strong> & abundance</span>
+              <span class="pill"><strong>Presence</strong> over performance</span>
+              <span class="pill"><strong>Attachment</strong> and regulation</span>
+              <span class="pill"><strong>Community</strong> care</span>
+            </div>
+          </div>
+
+          <aside class="card hero-side" aria-label="Pilot snapshot">
+            <div class="stat">
+              <div class="label">Pilot Cohort</div>
+              <div class="value">5–10 families</div>
+              <div class="note">Initial pilot planning discussed across the first two board meetings.</div>
+            </div>
+            <div class="stat">
+              <div class="label">Support window</div>
+              <div class="value">Pregnancy → Age 3</div>
+              <div class="note">Designed to reduce the financial pressure that pulls parents away from their children.</div>
+            </div>
+            <div class="stat">
+              <div class="label">Fundraising goal</div>
+              <div class="value">$1.5M</div>
+              <div class="note">A working target to fund family grants, administration, and reserves.</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <section id="mission">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>Mission</h3>
+          <p>Support parents in the first three years with funding, education, and a structure of care.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card pane">
+            <h4>Financial assistance</h4>
+            <p>
+              Direct support intended to help parents remain home, covering real-life needs like housing, utilities,
+              transportation, and the day-to-day costs of raising little ones.
+            </p>
+          </div>
+          <div class="card pane">
+            <h4>Education and development</h4>
+            <p>
+              Conscious parenting learning themes for ages 0–3, with emotional regulation and attachment-focused content
+              designed to support the parent-child bond.
+            </p>
+          </div>
+          <div class="card pane">
+            <h4>Community care</h4>
+            <p>
+              Regular touchpoints including monthly check-ins, quarterly gatherings, and in-person connection so families
+              feel seen, supported, and held.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="program">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>Pilot program</h3>
+          <p>A one-year pilot structure, designed to refine the model and build proof of impact.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card pane">
+            <h4>Structure</h4>
+            <ul class="list">
+              <li>Quarterly in-person gatherings and monthly touchpoints.</li>
+              <li>Monthly home visits (future planning discussed, with flexibility for coverage).</li>
+              <li>Participant testimonials (video + written) to support transparency and fundraising.</li>
+              <li>Annual review approach discussed for multi-year support planning.</li>
+            </ul>
+          </div>
+
+          <div class="card pane">
+            <h4>Financial support</h4>
+            <ul class="list">
+              <li>Baseline model discussed around an annual grant for one child (with scaling by additional children).</li>
+              <li>Grant range was discussed alongside a fundraising model to support 5–10 families.</li>
+              <li>Important focus: avoid jeopardizing Medicaid, SNAP, or other benefits.</li>
+              <li>Payment methods under review (direct deposit, checks, etc.).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pill-row" style="margin-top:14px">
+          <span class="pill">Pilot year: <strong>1 year</strong></span>
+          <span class="pill">Eligibility: <strong>application-based</strong></span>
+          <span class="pill">Support: <strong>financial + education</strong></span>
+          <span class="pill">Community: <strong>quarterly + monthly</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>How it works</h3>
+          <p>Clear steps for families and supporters as the foundation moves toward launch.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card pane">
+            <h4>1) Apply</h4>
+            <p>
+              Families complete an application that may include household context, demographics for impact reporting,
+              and an essay component. (The board is collaborating on the full application draft.)
+            </p>
+          </div>
+          <div class="card pane">
+            <h4>2) Review and select</h4>
+            <p>
+              Applications are reviewed, finalists may receive a home visit as part of final selection planning, and the
+              cohort is chosen for the pilot.
+            </p>
+          </div>
+          <div class="card pane">
+            <h4>3) Support and accountability</h4>
+            <p>
+              Families receive financial support alongside monthly touchpoints, quarterly gatherings, and learning themes.
+              Participation expectations are discussed as part of program integrity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="governance">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>Governance</h3>
+          <p>Built on clarity, responsible stewardship, and documentation that supports long-term credibility.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card pane">
+            <h4>Board and structure</h4>
+            <p>
+              The board has been establishing roles, responsibilities, and internal processes, including adoption of bylaws
+              and a conflict of interest policy.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Bylaws</span>
+              <span class="pill">Conflict of Interest</span>
+              <span class="pill">Budget projections</span>
+            </div>
+          </div>
+
+          <div class="card pane">
+            <h4>Compensation planning</h4>
+            <p>
+              Pilot-phase compensation structures were discussed for core roles. Future plans include aligning staffing and
+              contractor support with fundraising outcomes.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Pilot planning</span>
+              <span class="pill">Responsible scaling</span>
+              <span class="pill">Transparency</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="next">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>Next steps</h3>
+          <p>The current action list guiding progress toward filing, fundraising, and launching the pilot.</p>
+        </div>
+
+        <div class="card pane">
+          <div class="grid-2">
+            <div>
+              <h4>Operational priorities</h4>
+              <ul class="list">
+                <li>Finalize and submit the 1023 (federal tax exemption) and related filings.</li>
+                <li>Build the family application and review it collaboratively.</li>
+                <li>Create budget projections for 5 vs 10 families (salaries, admin, reserves).</li>
+                <li>Determine payment delivery methods for family support.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Program and fundraising</h4>
+              <ul class="list">
+                <li>Refine program timeline and participant expectations.</li>
+                <li>Brainstorm and plan initial fundraising activities (restaurant nights, events).</li>
+                <li>Explore grant opportunities, including potential university partnerships.</li>
+                <li>Develop topics for 0–3 learning themes and parent education classes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card cta" style="margin-top:14px;">
+          <div>
+            <h3>Want to support the mission?</h3>
+            <p>
+              If you feel called to help build a world where parents can stay home with their babies,
+              you can join the early supporters list or reach out to collaborate.
+            </p>
+          </div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a class="btn primary" href="#contact">Join the list</a>
+            <a class="btn" href="#contact">Partner with us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>Contact</h3>
+          <p>Replace the placeholders below with your official email, donation link, and application timeline once ready.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card pane">
+            <h4>Get in touch</h4>
+            <p>
+              Email: <a href="mailto:hello@sacredhomefoundation.org">hello@sacredhomefoundation.org</a><br />
+              Location: Pittsburgh Region (PA) + surrounding communities
+            </p>
+            <div class="pill-row">
+              <span class="pill">Donors</span>
+              <span class="pill">Grant partners</span>
+              <span class="pill">Community events</span>
+            </div>
+          </div>
+
+          <div class="card pane">
+            <h4>Quick links</h4>
+            <ul class="list">
+              <li><a href="#">Donate (coming soon)</a></li>
+              <li><a href="#">Family application (coming soon)</a></li>
+              <li><a href="#">Volunteer and partner (coming soon)</a></li>
+            </ul>
+            <p style="margin-top:12px;">
+              Tip: When you have real URLs, paste them into the href fields above.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <div>
+          <div class="small">© <span id="year"></span> Sacred Home Foundation. All rights reserved.</div>
+          <div class="small" style="margin-top:6px;">Built with love, presence, and the belief that babies deserve their parents.</div>
+        </div>
+        <div class="small">
+          <a href="#top" class="btn" style="padding:10px 12px;">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function toggleMenu(){
+      const nav = document.getElementById('mobileNav');
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</body>
+</html>
