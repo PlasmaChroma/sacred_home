@@ -24,8 +24,6 @@ export function Footer() {
               <h4 className="text-sm font-bold uppercase tracking-wider text-muted mb-4">Connect</h4>
               <ul className="space-y-2 text-sm text-soft">
                 <li><a href="mailto:hello@sacredhome.org" className="hover:text-primary transition-colors">Email Us</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Twitter</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">LinkedIn</a></li>
               </ul>
             </div>
           </div>
