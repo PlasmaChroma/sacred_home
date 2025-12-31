@@ -34,9 +34,9 @@ export default function MissionPage() {
 
               <h2 className="font-serif text-3xl mb-6">Our Vision</h2>
               <p className="text-muted text-lg leading-relaxed mb-8">Sacred Home Foundation exists so that parents can stay home to raise their children during the most crucial and irreplaceable years of early life. We provide financial support that makes presence possible, alongside conscious parenting education and community support rooted in the understanding that being there matters.</p>
-              <p className="text-muted text-lg leading-relaxed mb-8">
-                When we support families in staying home during these critical years, we're not just helping individual children. We're investing in healthier, more regulated, more connected humans and communities.
-              </p>
+              <p className="text-muted text-lg leading-relaxed mb-8">Through conscious parenting, we emphasize emotional attunement, nervous system regulation, and secure attachment, recognizing that children thrive when caregivers are physically and emotionally present. Families are supported not only financially, but through education, connection, and shared responsibility, so no parent is raising a child in isolation.
+
+              When we support families in staying home during these early years, we are not only helping individual children. We are investing in healthier, more regulated, and more connected humans and communities.</p>
               <p className="text-muted text-lg leading-relaxed">
                 This is how we bring families home.
               </p>
