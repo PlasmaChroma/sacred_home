@@ -39,16 +39,19 @@ export function Navbar() {
           </button>
 
           <nav className="hidden md:flex items-center gap-1 flex-wrap justify-end">
-            {["Mission", "Program", "How It Works", "Governance", "Next Steps"].map((item) => (
-              <a 
-                key={item}
-                href={`#${item.toLowerCase().split(' ')[0]}`}
-                className="px-3 py-2 text-sm font-medium text-muted hover:text-foreground transition-colors"
-              >
-                {item}
-              </a>
-            ))}
-            <a href="#contact" className="ml-2 btn-primary">
+            <a href="/mission" className="px-3 py-2 text-sm font-medium text-muted hover:text-foreground transition-colors">
+              Mission
+            </a>
+            <a href="/family" className="px-3 py-2 text-sm font-medium text-muted hover:text-foreground transition-colors">
+              For Families
+            </a>
+            <a href="/research" className="px-3 py-2 text-sm font-medium text-muted hover:text-foreground transition-colors">
+              Research
+            </a>
+            <a href="/about" className="px-3 py-2 text-sm font-medium text-muted hover:text-foreground transition-colors">
+              About
+            </a>
+            <a href="/#contact" className="ml-2 btn-primary">
               Get involved
             </a>
           </nav>
@@ -60,16 +63,41 @@ export function Navbar() {
           isOpen ? "max-h-[400px] opacity-100 pb-4" : "max-h-0 opacity-0"
         )}>
           <div className="flex flex-col gap-2 pt-2">
-            {["Mission", "Program", "How It Works", "Governance", "Next Steps", "Contact"].map((item) => (
-              <a 
-                key={item}
-                href={`#${item.toLowerCase().split(' ')[0]}`}
-                className="px-4 py-3 rounded-xl bg-white/50 border border-white/20 text-sm font-medium text-foreground hover:bg-white/80 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                {item}
-              </a>
-            ))}
+            <a 
+              href="/mission"
+              className="px-4 py-3 rounded-xl bg-white/50 border border-white/20 text-sm font-medium text-foreground hover:bg-white/80 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Mission
+            </a>
+            <a 
+              href="/family"
+              className="px-4 py-3 rounded-xl bg-white/50 border border-white/20 text-sm font-medium text-foreground hover:bg-white/80 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              For Families
+            </a>
+            <a 
+              href="/research"
+              className="px-4 py-3 rounded-xl bg-white/50 border border-white/20 text-sm font-medium text-foreground hover:bg-white/80 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Research
+            </a>
+            <a 
+              href="/about"
+              className="px-4 py-3 rounded-xl bg-white/50 border border-white/20 text-sm font-medium text-foreground hover:bg-white/80 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              About
+            </a>
+            <a 
+              href="/#contact"
+              className="px-4 py-3 rounded-xl bg-white/50 border border-white/20 text-sm font-medium text-foreground hover:bg-white/80 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </a>
           </div>
         </div>
       </div>

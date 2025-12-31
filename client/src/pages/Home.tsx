@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ArrowRight, Heart, Shield, Users, Calendar, Baby, Coins } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -27,31 +27,16 @@ export default function Home() {
                   </h2>
                   
                   <p className="text-muted text-base/relaxed max-w-[62ch] mb-8">
-                    Sacred Home Foundation helps families afford to stay home during the first three years.
-                    We believe the early years are sacred—and that parents deserve to be present, not pressured.
+                    Sacred Home exists so that parents can stay home to raise their children. The first seven years of life are the foundation of who one becomes for life. How you parent will create who your child will become. We provide financial support so both parents can stay home without burden during the most influential, important years of life.
                   </p>
                   
                   <div className="flex flex-wrap gap-3 mb-8">
-                    <a href="#program" className="btn-primary flex items-center gap-2">
-                      Explore the pilot <ArrowRight size={16} />
+                    <a href="#how" className="btn-primary flex items-center gap-2">
+                      Learn more <ArrowRight size={16} />
                     </a>
-                    <a href="#how" className="btn-secondary">
-                      How it works
+                    <a href="#contact" className="btn-secondary">
+                      Join us
                     </a>
-                  </div>
-
-                  <div className="flex flex-wrap gap-3 mt-4">
-                    {[
-                      { icon: Heart, text: "Love", sub: "and abundance" },
-                      { icon: Shield, text: "Presence", sub: "over performance" },
-                      { icon: Baby, text: "Attachment", sub: "and regulation" },
-                      { icon: Users, text: "Community", sub: "support" }
-                    ].map((pill, i) => (
-                      <span key={i} className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/10 border border-white/20 text-xs text-muted backdrop-blur-sm">
-                        <pill.icon size={12} className="text-primary" />
-                        <span><strong className="text-foreground font-semibold">{pill.text}</strong> {pill.sub}</span>
-                      </span>
-                    ))}
                   </div>
                 </div>
               </div>
@@ -80,11 +65,10 @@ export default function Home() {
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
               <div>
                 <span className="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Our Mission</span>
-                <h3 className="font-serif text-3xl">Restoring the Village</h3>
+                <h3 className="font-serif text-3xl">Bring Families Home</h3>
               </div>
               <p className="text-muted text-sm max-w-[60ch]">
-                Modern society has isolated parents and commodified childhood. We represent a return to 
-                ancestral wisdom supported by modern resources.
+                We live in a society where parents are forced to work jobs they don't care about so they can afford to pay someone else to watch their children. This disrupts the family unit and creates stressed, disconnected children.
               </p>
             </div>
 
