@@ -75,7 +75,7 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { title: "Financial Sovereignty", desc: "Providing meaningful grants that allow parents to choose presence over paycheck during the critical early years." },
-                { title: "Conscious Education", desc: "Resources and mentorship focused on attachment theory, nervous system regulation, and respectful parenting." },
+                { title: "Conscious Education", desc: "Resources and mentorship focused on attachment theory, nervous system regulation, and conscious parenting." },
                 { title: "Community Ecology", desc: "Rebuilding the fabric of support. Meal trains, listening circles, and shared childcare responsibilities." }
               ].map((card, i) => (
                 <div key={i} className="p-6 bg-white/60 border border-white/40 rounded-xl hover:shadow-md transition-all duration-300 hover:-translate-y-1">
