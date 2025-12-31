@@ -5,7 +5,6 @@ export default function MissionPage() {
   return (
     <div className="min-h-screen flex flex-col font-sans text-foreground">
       <Navbar />
-      
       <main className="flex-1">
         <header className="pt-24 pb-12 border-b border-border/50">
           <div className="max-w-[1100px] mx-auto px-6">
@@ -34,9 +33,7 @@ export default function MissionPage() {
               </p>
 
               <h2 className="font-serif text-3xl mb-6">Our Vision</h2>
-              <p className="text-muted text-lg leading-relaxed mb-8">
-                Sacred Home Foundation exists so that parents can stay home to raise their children. We provide financial support for both parents to stay home without financial burden during the most crucial, irreplaceable years of childhood.
-              </p>
+              <p className="text-muted text-lg leading-relaxed mb-8">Sacred Home Foundation exists so that parents can stay home to raise their children during the most crucial and irreplaceable years of early life. We provide financial support that makes presence possible, alongside conscious parenting education and community support rooted in the understanding that being there matters.</p>
               <p className="text-muted text-lg leading-relaxed mb-8">
                 When we support families in staying home during these critical years, we're not just helping individual children. We're investing in healthier, more regulated, more connected humans and communities.
               </p>
@@ -79,7 +76,6 @@ export default function MissionPage() {
           </div>
         </section>
       </main>
-      
       <Footer />
     </div>
   );
