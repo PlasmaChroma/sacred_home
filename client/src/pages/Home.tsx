@@ -76,7 +76,7 @@ export default function Home() {
               {[
                 { title: "Financial Sovereignty", desc: "Providing meaningful grants that allow parents to choose presence over paycheck during the critical early years." },
                 { title: "Conscious Education", desc: "Resources and mentorship focused on attachment theory, nervous system regulation, and conscious parenting." },
-                { title: "Community Ecology", desc: "Rebuilding the fabric of support. Meal trains, listening circles, and shared childcare responsibilities." }
+                { title: "Community Ecology", desc: "Restoring the natural networks of support that help families feel held, connected, and supported during the early years." }
               ].map((card, i) => (
                 <div key={i} className="p-6 bg-white/60 border border-white/40 rounded-xl hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                   <h4 className="font-serif text-lg mb-3 text-foreground">{card.title}</h4>
