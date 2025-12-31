@@ -27,8 +27,8 @@ export default function Home() {
                   </h2>
                   
                   <p className="text-muted text-base/relaxed max-w-[62ch] mb-8">
-                    We provide financial assistance and parenting education from pregnancy through age 3. 
-                    So families can choose presence—not financial pressure.
+                    Sacred Home Foundation helps families afford to stay home during the first three years.
+                    We believe the early years are sacred—and that parents deserve to be present, not pressured.
                   </p>
                   
                   <div className="flex flex-wrap gap-3 mb-8">
