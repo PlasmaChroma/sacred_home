@@ -45,6 +45,9 @@ export function Navbar() {
             <a href="/family" className="px-3 py-2 text-sm font-medium text-muted hover:text-foreground transition-colors">
               For Families
             </a>
+            <a href="/donors" className="px-3 py-2 text-sm font-medium text-muted hover:text-foreground transition-colors">
+              For Donors
+            </a>
             <a href="/research" className="px-3 py-2 text-sm font-medium text-muted hover:text-foreground transition-colors">
               Research
             </a>
@@ -60,7 +63,7 @@ export function Navbar() {
         {/* Mobile Nav */}
         <div className={cn(
           "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
-          isOpen ? "max-h-[400px] opacity-100 pb-4" : "max-h-0 opacity-0"
+          isOpen ? "max-h-[500px] opacity-100 pb-4" : "max-h-0 opacity-0"
         )}>
           <div className="flex flex-col gap-2 pt-2">
             <a 
@@ -76,6 +79,13 @@ export function Navbar() {
               onClick={() => setIsOpen(false)}
             >
               For Families
+            </a>
+            <a 
+              href="/donors"
+              className="px-4 py-3 rounded-xl bg-white/50 border border-white/20 text-sm font-medium text-foreground hover:bg-white/80 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              For Donors
             </a>
             <a 
               href="/research"

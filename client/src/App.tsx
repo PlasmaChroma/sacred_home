@@ -7,6 +7,7 @@ import About from "@/pages/About";
 import Family from "@/pages/Family";
 import Research from "@/pages/Research";
 import MissionPage from "@/pages/Mission";
+import Donors from "@/pages/Donors";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -15,6 +16,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/family" component={Family} />
+      <Route path="/donors" component={Donors} />
       <Route path="/research" component={Research} />
       <Route path="/mission" component={MissionPage} />
       <Route component={NotFound} />

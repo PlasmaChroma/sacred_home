@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col font-sans text-foreground">
       <Navbar />
-      
       <main className="flex-1">
         {/* Hero Section */}
         <header className="pt-14 pb-8">
@@ -113,7 +112,7 @@ export default function Home() {
               <div className="bg-card border border-border rounded-xl p-8 shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">2</div>
-                  <h4 className="font-serif text-lg">The Fourth Trimester</h4>
+                  <h4 className="font-serif text-lg">Initial Support Phase</h4>
                 </div>
                 <p className="text-muted text-sm leading-relaxed pl-11">
                   Intensive support immediately postpartum. Doula care, lactation support, and meal delivery. 
@@ -170,7 +169,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      
       <Footer />
     </div>
   );
