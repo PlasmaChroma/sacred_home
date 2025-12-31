@@ -45,7 +45,7 @@ export default function Home() {
                       { icon: Heart, text: "Love", sub: "and abundance" },
                       { icon: Shield, text: "Presence", sub: "over performance" },
                       { icon: Baby, text: "Attachment", sub: "and regulation" },
-                      { icon: Users, text: "Community", sub: "care" }
+                      { icon: Users, text: "Community", sub: "support" }
                     ].map((pill, i) => (
                       <span key={i} className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/10 border border-white/20 text-xs text-muted backdrop-blur-sm">
                         <pill.icon size={12} className="text-primary" />
