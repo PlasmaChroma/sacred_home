@@ -59,7 +59,7 @@ export default function Home() {
               {/* Sidebar Stats */}
               <aside className="bg-card border border-border rounded-xl shadow-lg p-6 flex flex-col justify-between gap-4">
                 {[
-                  { label: "Pilot Cohort", value: "5–10 families", note: "Initial pilot planning discussed across the first two board meetings." },
+                  { label: "Pilot Cohort", value: "5–10 families", note: "A carefully selected group of families to shape the program's design and impact." },
                   { label: "Support Window", value: "Pregnancy → Age 3", note: "Designed to reduce the financial pressure that pulls parents away from their children." },
                   { label: "Fundraising Goal", value: "$1.5M", note: "A working target to fund family grants, administration, and reserves." }
                 ].map((stat, i) => (
