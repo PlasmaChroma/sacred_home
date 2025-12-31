@@ -42,7 +42,7 @@ export default function Home() {
 
                   <div className="flex flex-wrap gap-3 mt-4">
                     {[
-                      { icon: Heart, text: "Love", sub: "& abundance" },
+                      { icon: Heart, text: "Love", sub: "and abundance" },
                       { icon: Shield, text: "Presence", sub: "over performance" },
                       { icon: Baby, text: "Attachment", sub: "and regulation" },
                       { icon: Users, text: "Community", sub: "care" }
