@@ -1,8 +1,31 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, User } from "lucide-react";
 
 export default function About() {
+  const team = [
+    {
+      name: "Genna Rose Kendall",
+      role: "Executive Director",
+      bio: "Leading the vision of Sacred Home Foundation to restore the family unit and ensure every parent has the choice to be present during the sacred early years."
+    },
+    {
+      name: "Levi Kendall",
+      role: "Treasurer & Vice President",
+      bio: "Overseeing financial stewardship and strategic growth to ensure long-term stability for the families we serve."
+    },
+    {
+      name: "Allison Laroche",
+      role: "Program Coordinator",
+      bio: "Managing the day-to-day operations and pilot program logistics to provide seamless support for our community."
+    },
+    {
+      name: "Marissa Grace",
+      role: "Family Support Specialist & Grant Writer",
+      bio: "Working directly with families to provide guidance while securing the resources necessary to expand our impact."
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col font-sans text-foreground">
       <Navbar />
@@ -13,31 +36,28 @@ export default function About() {
             <span className="text-primary font-bold tracking-widest text-xs uppercase mb-4 block">About Us</span>
             <h1 className="font-serif text-5xl mb-6">Our Team</h1>
             <p className="text-muted text-lg max-w-[70ch]">
-              Sacred Home Foundation is founded and guided by individuals deeply committed to restoring the family unit and redefining what it means to parent in the modern world.
+              Sacred Home Foundation is guided by a team deeply committed to "Making Parenthood Valuable" and supporting the sacred first years of life.
             </p>
           </div>
         </header>
 
         <section className="py-16">
           <div className="max-w-[1100px] mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12">
-              <div className="bg-card border border-border rounded-xl p-8 shadow-sm">
-                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary/30 to-secondary/30 mb-6" />
-                <h3 className="font-serif text-2xl mb-2">Founder & Director</h3>
-                <p className="text-primary font-semibold mb-4">Coming Soon</p>
-                <p className="text-muted leading-relaxed">
-                  More information about our founder and their vision for Sacred Home Foundation.
-                </p>
-              </div>
-
-              <div className="bg-card border border-border rounded-xl p-8 shadow-sm">
-                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-secondary/30 to-accent/30 mb-6" />
-                <h3 className="font-serif text-2xl mb-2">Board Members</h3>
-                <p className="text-primary font-semibold mb-4">Coming Soon</p>
-                <p className="text-muted leading-relaxed">
-                  Our board is composed of experts in child development, finance, and family wellness.
-                </p>
-              </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              {team.map((member, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-8 shadow-sm flex flex-col md:flex-row gap-8 items-start">
+                  <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <User size={40} className="text-primary/40" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-2xl mb-1">{member.name}</h3>
+                    <p className="text-primary font-semibold mb-4 text-sm uppercase tracking-wider">{member.role}</p>
+                    <p className="text-muted leading-relaxed text-sm">
+                      {member.bio}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -78,7 +98,7 @@ export default function About() {
           <div className="max-w-[1100px] mx-auto px-6 text-center">
             <h2 className="font-serif text-3xl mb-4">Interested in Our Mission?</h2>
             <p className="text-muted text-lg max-w-[60ch] mx-auto mb-8">
-              Join us in bringing families home. Whether through donations, volunteering, or sharing our message—every contribution matters.
+              Join us in making parenthood valuable. Whether through donations, volunteering, or sharing our message—every contribution matters.
             </p>
             <a href="/#contact" className="btn-primary inline-flex items-center gap-2">
               Get Involved <ArrowRight size={16} />
