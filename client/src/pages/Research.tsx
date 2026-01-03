@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { BookOpen, Brain, Heart, Globe, Quote } from "lucide-react";
+import { BookOpen, Brain, Heart, Globe, Quote, ArrowRight } from "lucide-react";
 
 export default function Research() {
   const books = [
@@ -51,8 +51,41 @@ export default function Research() {
           </div>
         </header>
 
+        {/* Original Key Research Areas Section */}
+        <section className="py-16">
+          <div className="max-w-[1100px] mx-auto px-6">
+            <h2 className="font-serif text-3xl mb-12">Key Research Areas</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="p-8 bg-card border border-border rounded-xl shadow-sm">
+                <h3 className="font-serif text-xl mb-4">The Critical Period (0-7)</h3>
+                <p className="text-muted leading-relaxed mb-4 text-sm">
+                  The first seven years of life are the foundation of who one becomes for life. Attachment researcher John Bowlby and others have shown that secure attachment in these years predicts emotional health, social competence, and resilience throughout life.
+                </p>
+              </div>
+              <div className="p-8 bg-card border border-border rounded-xl shadow-sm">
+                <h3 className="font-serif text-xl mb-4">Parental Presence & Development</h3>
+                <p className="text-muted leading-relaxed mb-4 text-sm">
+                  Research shows that parental presence and responsiveness during early childhood dramatically impacts brain development, emotional regulation, and long-term outcomes. Children with responsive caregivers develop stronger neural pathways.
+                </p>
+              </div>
+              <div className="p-8 bg-card border border-border rounded-xl shadow-sm">
+                <h3 className="font-serif text-xl mb-4">Nervous System Regulation</h3>
+                <p className="text-muted leading-relaxed mb-4 text-sm">
+                  Through co-regulation with a calm, present parent, children learn to regulate their own nervous systems. This foundational skill determines how they handle stress and connect with others for life.
+                </p>
+              </div>
+              <div className="p-8 bg-card border border-border rounded-xl shadow-sm">
+                <h3 className="font-serif text-xl mb-4">The Cost of Early Separation</h3>
+                <p className="text-muted leading-relaxed mb-4 text-sm">
+                  Studies show that early, non-parental childcare can increase stress hormones in young children and disrupt attachment bonds. Parental presence during the first three years has measurable protective effects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* The Subconscious Foundation */}
-        <section className="py-20">
+        <section className="py-20 bg-[#f9f7f2] border-y border-border/50">
           <div className="max-w-[1100px] mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
@@ -68,13 +101,13 @@ export default function Research() {
                   <div className="p-6 bg-card border border-border rounded-xl shadow-sm">
                     <h3 className="font-serif text-xl mb-2">Subconscious Imprinting</h3>
                     <p className="text-muted text-sm leading-relaxed">
-                      How a parent responds to a child's needs during this time programs their subconscious mind. This programming becomes the "internal working model" for how they view themselves and the world.
+                      How a parent responds to a child's needs during this time programs their subconscious mind. This programming becomes the "internal working model" for how they view themselves and the world. It effectively becomes their inner voice for life.
                     </p>
                   </div>
                   <div className="p-6 bg-card border border-border rounded-xl shadow-sm">
-                    <h3 className="font-serif text-xl mb-2">Lifelong Health Effects</h3>
+                    <h3 className="font-serif text-xl mb-2">Lifelong Health & Relationship Effects</h3>
                     <p className="text-muted text-sm leading-relaxed">
-                      Research by <strong>Dr. Gabor Maté</strong> and others shows that early childhood stress (from lack of presence or inconsistent care) is a primary driver of chronic illness, addiction, and mental health struggles in adulthood.
+                      Research by <strong>Dr. Gabor Maté</strong> and others shows that early childhood stress (from lack of presence or inconsistent care) is a primary driver of chronic illness, addiction, and mental health struggles in adulthood. Secure attachment predicts healthier adult relationships and even greater financial stability.
                     </p>
                   </div>
                 </div>
@@ -93,7 +126,7 @@ export default function Research() {
         </section>
 
         {/* Global Perspective */}
-        <section className="py-20 bg-white/40 border-y border-border/50">
+        <section className="py-20">
           <div className="max-w-[1100px] mx-auto px-6">
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 text-primary font-semibold mb-4 uppercase tracking-widest text-xs">
@@ -127,7 +160,7 @@ export default function Research() {
         </section>
 
         {/* Essential Reading */}
-        <section className="py-20">
+        <section className="py-20 bg-white/40 border-t border-border/50">
           <div className="max-w-[1100px] mx-auto px-6">
             <div className="flex items-center gap-3 mb-12">
               <BookOpen className="text-primary" size={28} />
