@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, Check } from "lucide-react";
+import familyHero from "@assets/generated_images/conscious_parenting_mother_child.png";
 
 export default function Family() {
   return (
@@ -8,8 +9,11 @@ export default function Family() {
       <Navbar />
       
       <main className="flex-1">
-        <header className="pt-24 pb-12 border-b border-border/50">
-          <div className="max-w-[1100px] mx-auto px-6">
+        <header className="pt-24 pb-12 border-b border-border/50 relative overflow-hidden">
+          <div className="absolute inset-0 z-0 opacity-10">
+            <img src={familyHero} alt="Background" className="w-full h-full object-cover" />
+          </div>
+          <div className="max-w-[1100px] mx-auto px-6 relative z-10">
             <span className="text-primary font-bold tracking-widest text-xs uppercase mb-4 block">For Families</span>
             <h1 className="font-serif text-5xl mb-6">Bringing You Home</h1>
             <p className="text-muted text-lg max-w-[70ch]">

@@ -1,6 +1,8 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ArrowRight } from "lucide-react";
+import heroImage from "@assets/generated_images/peaceful_newborn_with_parent.png";
+import communityImage from "@assets/generated_images/supportive_parent_community_circle.png";
 
 export default function Home() {
   return (
@@ -12,8 +14,15 @@ export default function Home() {
           <div className="max-w-[1100px] mx-auto px-6">
             <div className="grid lg:grid-cols-[1.25fr_0.75fr] gap-6 items-stretch">
               {/* Main Hero Card */}
-              <div className="bg-card border border-border rounded-xl shadow-lg p-8 relative overflow-hidden group">
-                <div className="absolute inset-[-160px_auto_auto_-200px] w-[520px] h-[520px] bg-[radial-gradient(circle_at_30%_30%,hsl(var(--primary)/0.25),transparent_60%)] blur-[2px] rotate-12 opacity-80" />
+              <div className="bg-card border border-border rounded-xl shadow-lg p-8 relative overflow-hidden group min-h-[500px] flex flex-col justify-center">
+                <div className="absolute inset-0 z-0">
+                  <img 
+                    src={heroImage} 
+                    alt="Peaceful newborn with parent" 
+                    className="w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-card via-card/90 to-transparent" />
+                </div>
                 
                 <div className="relative z-10">
                   <div className="inline-flex items-center gap-2.5 px-3 py-1.5 border border-white/20 bg-white/10 rounded-full text-muted text-[13px] tracking-wide mb-6 backdrop-blur-md">
@@ -145,6 +154,22 @@ export default function Home() {
                   <p className="text-muted text-sm leading-relaxed">{card.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Methodology Section Image Add */}
+        <section className="py-12">
+          <div className="max-w-[1100px] mx-auto px-6">
+            <div className="rounded-2xl overflow-hidden border border-border shadow-lg h-[400px] relative">
+              <img 
+                src={communityImage} 
+                alt="Supportive parent community" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+                <p className="text-white text-xl font-serif italic">"Restoring the natural networks of support that help families feel held, connected, and supported."</p>
+              </div>
             </div>
           </div>
         </section>

@@ -1,17 +1,21 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, User } from "lucide-react";
+import gennaImage from "@assets/stock_images/professional_headsho_1b0ac0c1.jpg";
+import leviImage from "@assets/stock_images/professional_headsho_3ade6783.jpg";
 
 export default function About() {
   const team = [
     {
       name: "Genna Rose Kendall",
       role: "Executive Director",
+      image: gennaImage,
       bio: "Leading the vision of Sacred Home Foundation to restore the family unit and ensure every parent has the choice to be present during the sacred early years."
     },
     {
       name: "Levi Kendall",
       role: "Treasurer & Vice President",
+      image: leviImage,
       bio: "Overseeing financial stewardship and strategic growth to ensure long-term stability for the families we serve."
     },
     {
@@ -46,8 +50,14 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-8">
               {team.map((member, i) => (
                 <div key={i} className="bg-card border border-border rounded-xl p-8 shadow-sm flex flex-col md:flex-row gap-8 items-start">
-                  <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <User size={40} className="text-primary/40" />
+                  <div className="w-24 h-24 rounded-full overflow-hidden bg-primary/10 flex-shrink-0">
+                    {member.image ? (
+                      <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center">
+                        <User size={40} className="text-primary/40" />
+                      </div>
+                    )}
                   </div>
                   <div>
                     <h3 className="font-serif text-2xl mb-1">{member.name}</h3>
