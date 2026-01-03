@@ -35,7 +35,7 @@ export default function Home() {
                   </h2>
                   
                   <p className="text-muted text-base/relaxed max-w-[62ch] mb-8">
-                    Sacred Home exists so that parents can stay home to raise their children. The first seven years of life are the foundation of who one becomes for life. How you parent will create who your child will become. We provide financial support so both parents can stay home without burden during the most influential, important years of life.
+                    Sacred Home exists to ensure that the formative early years remain a time of deep connection, not financial survival. The first seven years serve as the blueprint for a human's entire future, shaping their emotional landscape and sense of self. How you show up today determines who your child becomes tomorrow. We provide the financial freedom for both parents to remain present, protecting the most influential and irreplaceable chapter of your family's story.
                   </p>
                   
                   <div className="flex flex-wrap gap-3 mb-8">
