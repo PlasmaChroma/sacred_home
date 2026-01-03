@@ -64,7 +64,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
               <div>
                 <span className="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Our Mission</span>
-                <h3 className="font-serif text-3xl">Bring Families Home</h3>
+                <h3 className="font-serif text-3xl">Making Parenthood Valuable</h3>
               </div>
               <p className="text-muted text-sm max-w-[60ch]">
                 We live in a society where parents are forced to work jobs they don't care about so they can afford to pay someone else to watch their children. This disrupts the family unit and creates stressed, disconnected children.
