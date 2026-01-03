@@ -17,7 +17,7 @@ export default function About() {
     {
       name: "Allison Laroche",
       role: "Program Coordinator",
-      bio: "Managing the day-to-day operations and pilot program logistics to provide seamless support for our community."
+      bio: "Developing and overseeing curriculum, programs, and community activities to provide meaningful education and support for our families."
     },
     {
       name: "Marissa Grace",
