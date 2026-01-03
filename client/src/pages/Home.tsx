@@ -191,7 +191,7 @@ export default function Home() {
                   <h4 className="font-serif text-lg">Application & Selection</h4>
                 </div>
                 <p className="text-muted text-sm leading-relaxed pl-11">
-                  Families apply during pregnancy. Selection is based on commitment to conscious parenting values 
+                  Families can apply anytime from pregnancy through age 3. Selection is based on commitment to conscious parenting values 
                   and financial need. We prioritize families where this support makes the difference between 
                   staying home and returning to work prematurely.
                 </p>
@@ -200,11 +200,11 @@ export default function Home() {
               <div className="bg-card border border-border rounded-xl p-8 shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">2</div>
-                  <h4 className="font-serif text-lg">Initial Support Phase</h4>
+                  <h4 className="font-serif text-lg">Monthly Support</h4>
                 </div>
                 <p className="text-muted text-sm leading-relaxed pl-11">
-                  Intensive support immediately postpartum. Doula care, lactation support, and meal delivery. 
-                  Maximum financial stipend phase to ensure absolute rest for the birthing parent.
+                  Once selected, families receive a monthly financial stipend along with access to our conscious parenting resources. 
+                  This stable support allows for true presence during the most critical developmental windows.
                 </p>
               </div>
                <div className="bg-card border border-border rounded-xl p-8 shadow-sm">
