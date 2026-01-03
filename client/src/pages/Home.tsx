@@ -61,13 +61,76 @@ export default function Home() {
         {/* Mission Section */}
         <section id="mission" className="py-12">
           <div className="max-w-[1100px] mx-auto px-6">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
               <div>
                 <span className="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Our Mission</span>
                 <h3 className="font-serif text-3xl">Making Parenthood Valuable</h3>
               </div>
               <p className="text-muted text-sm max-w-[60ch]">
                 We live in a society where parents are forced to work jobs they don't care about so they can afford to pay someone else to watch their children. This disrupts the family unit and creates stressed, disconnected children.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 mb-16">
+              <div>
+                <h4 className="font-serif text-2xl mb-6 text-foreground border-b border-primary/20 pb-2 inline-block">S.A.C.R.E.D. Philosophy</h4>
+                <div className="space-y-6">
+                  <div>
+                    <p className="font-bold text-primary text-sm tracking-widest uppercase mb-1">S — Safety</p>
+                    <p className="text-muted text-sm">Children grow when their environment is steady, predictable, and emotionally safe.</p>
+                  </div>
+                  <div>
+                    <p className="font-bold text-primary text-sm tracking-widest uppercase mb-1">A — Attachment</p>
+                    <p className="text-muted text-sm">Secure attachment lays the foundation for lifelong resilience and emotional health.</p>
+                  </div>
+                  <div>
+                    <p className="font-bold text-primary text-sm tracking-widest uppercase mb-1">C — Connection and Consciousness</p>
+                    <p className="text-muted text-sm">Conscious, attuned parenting builds the strongest relational foundations.</p>
+                  </div>
+                  <div>
+                    <p className="font-bold text-primary text-sm tracking-widest uppercase mb-1">R — Responsibility</p>
+                    <p className="text-muted text-sm">Supporting empowered responsibility in parents with compassion, not pressure.</p>
+                  </div>
+                  <div>
+                    <p className="font-bold text-primary text-sm tracking-widest uppercase mb-1">E — Emotional Intelligence and Attunement</p>
+                    <p className="text-muted text-sm">Parents who build emotional intelligence raise children who understand themselves deeply.</p>
+                  </div>
+                  <div>
+                    <p className="font-bold text-primary text-sm tracking-widest uppercase mb-1">D — Development</p>
+                    <p className="text-muted text-sm">Honoring the science of early childhood development as the guiding force behind SHF.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="font-serif text-2xl mb-6 text-foreground border-b border-primary/20 pb-2 inline-block">H.O.M.E. Values</h4>
+                <div className="space-y-6">
+                  <div>
+                    <p className="font-bold text-secondary text-sm tracking-widest uppercase mb-1">H — Heart</p>
+                    <p className="text-muted text-sm">Every decision is rooted in love.</p>
+                  </div>
+                  <div>
+                    <p className="font-bold text-secondary text-sm tracking-widest uppercase mb-1">O — Open</p>
+                    <p className="text-muted text-sm">Open communication, open guidance, open support.</p>
+                  </div>
+                  <div>
+                    <p className="font-bold text-secondary text-sm tracking-widest uppercase mb-1">M — Mission</p>
+                    <p className="text-muted text-sm">A mission driven by the desire to strengthen families in the earliest years.</p>
+                  </div>
+                  <div>
+                    <p className="font-bold text-secondary text-sm tracking-widest uppercase mb-1">E — Early Childhood Development</p>
+                    <p className="text-muted text-sm">The heart and foundation of SHF’s purpose.</p>
+                  </div>
+                  <div className="pt-4 mt-4 border-t border-border/50 italic text-muted text-sm">
+                    We believe parents thrive when supported, and children thrive when loved and held.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="max-w-[70ch] mx-auto text-center mb-16">
+              <p className="text-muted italic text-lg leading-relaxed">
+                "We believe parents thrive when supported, and children thrive when loved and held."
               </p>
             </div>
 
