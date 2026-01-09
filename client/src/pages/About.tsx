@@ -22,7 +22,7 @@ export default function About() {
     },
     {
       name: "Allison Laroche",
-      role: "Program Coordinator",
+      role: "Secretary/Program Coordinator",
       image: allisonImage,
       bio: "Developing and overseeing curriculum, programs, and community activities to provide meaningful education and support for our families."
     },
