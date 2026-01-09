@@ -7,7 +7,6 @@ export default function Donors() {
   return (
     <div className="min-h-screen flex flex-col font-sans text-foreground">
       <Navbar />
-      
       <main className="flex-1">
         <header className="pt-24 pb-12 border-b border-border/50 relative overflow-hidden">
           <div className="absolute inset-0 z-0 opacity-20">
@@ -36,9 +35,7 @@ export default function Donors() {
               <div className="p-8 bg-card border border-border rounded-xl">
                 <Target className="text-primary mb-4" size={32} />
                 <h3 className="font-serif text-xl mb-4">Program Support</h3>
-                <p className="text-muted leading-relaxed text-sm">
-                  Home visits, wellness check-ins, parenting education, community circles, and practical support like doula care and meal delivery.
-                </p>
+                <p className="text-muted leading-relaxed text-sm">Home visits, wellness check-ins, parenting education, community circles, and practical support.</p>
               </div>
               <div className="p-8 bg-card border border-border rounded-xl">
                 <Shield className="text-primary mb-4" size={32} />
@@ -181,7 +178,6 @@ export default function Donors() {
           </div>
         </section>
       </main>
-      
       <Footer />
     </div>
   );
