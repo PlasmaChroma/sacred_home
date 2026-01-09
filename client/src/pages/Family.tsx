@@ -228,7 +228,7 @@ export default function Family() {
             <p className="text-muted text-lg max-w-[60ch] mx-auto mb-8">
               Join our waiting list to be notified when applications open. This is your chance to become part of a movement that puts families first.
             </p>
-            <a href="/#contact" className="btn-primary inline-flex items-center gap-2">
+            <a href="https://forms.gle/jni2wmhGRju9J5657" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2">
               Join the Waiting List <ArrowRight size={16} />
             </a>
           </div>

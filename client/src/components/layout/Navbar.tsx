@@ -54,7 +54,7 @@ export function Navbar() {
             <a href="/about" className="px-3 py-2 text-sm font-medium text-muted hover:text-foreground transition-colors">
               About
             </a>
-            <a href="/#contact" className="ml-2 btn-primary">
+            <a href="mailto:connect@sacredhomefoundation.org" className="ml-2 btn-primary">
               Get involved
             </a>
           </nav>
@@ -102,7 +102,7 @@ export function Navbar() {
               About
             </a>
             <a 
-              href="/#contact"
+              href="mailto:connect@sacredhomefoundation.org"
               className="px-4 py-3 rounded-xl bg-white/50 border border-white/20 text-sm font-medium text-foreground hover:bg-white/80 transition-colors"
               onClick={() => setIsOpen(false)}
             >

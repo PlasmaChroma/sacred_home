@@ -15,15 +15,16 @@ export function Footer() {
             <div>
               <h4 className="text-sm font-bold uppercase tracking-wider text-muted mb-4">Foundation</h4>
               <ul className="space-y-2 text-sm text-soft">
-                <li><a href="#mission" className="hover:text-primary transition-colors">Mission</a></li>
-                <li><a href="#governance" className="hover:text-primary transition-colors">Governance</a></li>
-                <li><a href="#financials" className="hover:text-primary transition-colors">Financials</a></li>
+                <li><a href="/mission" className="hover:text-primary transition-colors">Mission</a></li>
+                <li><a href="/about" className="hover:text-primary transition-colors">Governance</a></li>
+                <li><a href="/donors" className="hover:text-primary transition-colors">Financials</a></li>
               </ul>
             </div>
             <div>
               <h4 className="text-sm font-bold uppercase tracking-wider text-muted mb-4">Connect</h4>
               <ul className="space-y-2 text-sm text-soft">
-                <li><a href="mailto:hello@sacredhome.org" className="hover:text-primary transition-colors">Email Us</a></li>
+                <li><a href="mailto:connect@sacredhomefoundation.org" className="hover:text-primary transition-colors">Email Us</a></li>
+                <li><a href="https://buy.stripe.com/5kQ6oJ6VQ61s0FofKb7N600" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Donate</a></li>
               </ul>
             </div>
           </div>

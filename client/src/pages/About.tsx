@@ -110,7 +110,7 @@ export default function About() {
             <p className="text-muted text-lg max-w-[60ch] mx-auto mb-8">
               Join us in making parenthood valuable. Whether through donations, volunteering, or sharing our message—every contribution matters.
             </p>
-            <a href="/#contact" className="btn-primary inline-flex items-center gap-2">
+            <a href="mailto:connect@sacredhomefoundation.org" className="btn-primary inline-flex items-center gap-2">
               Get Involved <ArrowRight size={16} />
             </a>
           </div>

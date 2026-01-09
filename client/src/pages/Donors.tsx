@@ -175,7 +175,7 @@ export default function Donors() {
             <p className="text-muted text-lg max-w-[60ch] mx-auto mb-8">
               Your support makes it possible for families to stay home. Let's bring families home together.
             </p>
-            <a href="/#contact" className="btn-primary inline-flex items-center gap-2">
+            <a href="https://buy.stripe.com/5kQ6oJ6VQ61s0FofKb7N600" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2">
               Make a Donation <ArrowRight size={16} />
             </a>
           </div>

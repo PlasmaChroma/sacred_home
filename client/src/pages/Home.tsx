@@ -42,7 +42,7 @@ export default function Home() {
                     <a href="#how" className="btn-primary flex items-center gap-2">
                       Learn more <ArrowRight size={16} />
                     </a>
-                    <a href="#contact" className="btn-secondary">
+                    <a href="mailto:connect@sacredhomefoundation.org" className="btn-secondary">
                       Join us
                     </a>
                   </div>
@@ -246,12 +246,12 @@ export default function Home() {
               </div>
               
               <div className="flex gap-4 relative z-10">
-                <button className="btn-primary whitespace-nowrap px-8 py-4 text-base">
+                <a href="https://buy.stripe.com/5kQ6oJ6VQ61s0FofKb7N600" target="_blank" rel="noopener noreferrer" className="btn-primary whitespace-nowrap px-8 py-4 text-base">
                   Donate Now
-                </button>
-                <button className="px-6 py-4 rounded-xl border border-border bg-white/50 font-semibold text-foreground hover:bg-white transition-colors">
+                </a>
+                <a href="mailto:connect@sacredhomefoundation.org" className="px-6 py-4 rounded-xl border border-border bg-white/50 font-semibold text-foreground hover:bg-white transition-colors">
                   Contact Us
-                </button>
+                </a>
               </div>
             </div>
           </div>
