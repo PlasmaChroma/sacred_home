@@ -42,7 +42,7 @@ export default function Home() {
                     <a href="#how" className="btn-primary flex items-center gap-2">
                       Learn more <ArrowRight size={16} />
                     </a>
-                    <a href="mailto:connect@sacredhomefoundation.org" className="btn-secondary">
+                    <a href="mailto:connect@sacredhomefoundation.org" className="btn-primary">
                       Join us
                     </a>
                   </div>

@@ -1,8 +1,10 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, User } from "lucide-react";
-import gennaImage from "@assets/stock_images/professional_headsho_1b0ac0c1.jpg";
-import leviImage from "@assets/stock_images/professional_headsho_3ade6783.jpg";
+import gennaImage from "@assets/7194d9a01dbeb536ea96f5c1a413cff7_2_1767927730378.jpg";
+import leviImage from "@assets/612219496_1688487795448683_5436508785188232350_n_1767927672422.png";
+import allisonImage from "@assets/49339653_10156315769863305_8840781319404257280_n_1767927693252.jpg";
+import marissaImage from "@assets/543052952_10237779933818991_1011292304281418625_n_1767927693253.jpg";
 
 export default function About() {
   const team = [
@@ -21,11 +23,13 @@ export default function About() {
     {
       name: "Allison Laroche",
       role: "Program Coordinator",
+      image: allisonImage,
       bio: "Developing and overseeing curriculum, programs, and community activities to provide meaningful education and support for our families."
     },
     {
       name: "Marissa Grace",
       role: "Family Support Specialist & Grant Writer",
+      image: marissaImage,
       bio: "Working directly with families to provide guidance while securing the resources necessary to expand our impact."
     }
   ];
